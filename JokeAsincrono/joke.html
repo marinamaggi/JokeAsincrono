@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>chcuk norris</title>
+		<link rel="stylesheet" href="static/css/joke.css" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Concert+One&display=swap"
+			rel="stylesheet"
+		/>
+	</head>
+	<body>
+		<div class="maxiContainer">
+			<div class="titleContainer">
+				<h1>JOKE CHUCK NORRIS</h1>
+				<img src="static/images/mitra.png" alt="mitraglietta" id="mitra" />
+			</div>
+
+			<div class="jokeContainer">
+				<p class="jokeString"></p>
+			</div>
+
+			<div class="jokeSelect">
+				<img src="static/images/Chuck1.png" alt="chcuk image" id="chuckImg" />
+				<form id="jokeForm">
+					<select name="jokeTypes" id="jokeTypes">
+						<option value="" selected>select a joke type</option>
+						<option value="animal">Animal</option>
+						<option value="career">Career</option>
+						<option value="celebrity">Celebrity</option>
+						<option value="dev">Dev</option>
+						<option value="explicit">Explicit</option>
+						<option value="fashion">Fashion</option>
+						<option value="food">Food</option>
+						<option value="history">History</option>
+						<option value="money">Movie</option>
+						<option value="music">Music</option>
+						<option value="political">Political</option>
+						<option value="religion">Religion</option>
+						<option value="science">Science</option>
+						<option value="sport">Sport</option>
+						<option value="travel">Travel</option>
+						<option value="money">Money</option>
+					</select>
+
+					<button type="submit" class="loadJokeButton">Carica battuta</button>
+
+					<div class="copyContainer">
+						<a href="#" class="copyButton">
+							<span id="copy">Copia</span>
+							<img
+								src="static/images/copia.svg"
+								alt="copy button"
+								class="copyImg"
+							/>
+						</a>
+					</div>
+				</form>
+			</div>
+		</div>
+
+		<div class="jokeLinkContainer">
+			<a id="jokeLink" href=""></a>
+		</div>
+
+		<script src="static/js/copyToClipboard.js"></script>
+		<script src="static/js/joke.js"></script>
+	</body>
+</html>
